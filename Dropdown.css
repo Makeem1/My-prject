@@ -1,0 +1,48 @@
+body {
+    color: white;
+}
+
+/* targetting all <a> inside the <navbutton> to be white */
+.navbutton a {
+    color: white;
+}
+
+/* targetting all <a> inside the <dropdown-parent> to be white */
+.dropdown-parent a {
+    color: red;
+}
+
+/*  */
+.navbutton {
+    background-color: rgb(162, 201, 196);
+    width: 100px;
+    font-size: 1.5rempx;
+    text-align: center;
+    display: inline-block;
+    padding: 11px 5px;
+    position: relative;
+}
+
+
+/* this turns off the drop down when not in used */
+.dropdown-parent {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    z-index: 99;
+    margin-left: -5px;
+}
+
+
+/* this turn on the dropdown when hovering over the parent key */
+
+.navbutton:hover .dropdown-parent {
+    display: block;
+}
+
+/* this code change the background color of the navbutton inside the .dropdown-parentwhen hovering over it */
+
+.dropdown-parent .navbutton:hover {
+    background-color: rgb(128, 0, 64);
+    transition-delay: 0.7s;
+}
